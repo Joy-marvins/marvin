@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:gravity="center"
+        android:text="@string/text"
+        android:textColor="@android:color/holo_blue_dark"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/WebView"
+        app:layout_constraintVertical_bias="0.021" />
+
+    <WebView
+        android:id="@+id/WebView"
+        android:layout_width="match_parent"
+        android:layout_height="198dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2"
+        tools:ignore="MissingConstraints" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        app:layout_constraintBottom_toTopOf="@+id/btnlogin"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView">
+
+        <EditText
+            android:id="@+id/editname"
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:layout_weight="0.5"
+            android:autofillHints=""
+            android:hint="@string/user"
+            android:inputType=""
+            android:singleLine="true"
+            app:layout_constraintBottom_toTopOf="@+id/editpasswd"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView"
+            app:layout_constraintVertical_bias="0.0"
+            tools:ignore="MissingConstraints"
+            tools:targetApi="o" />
+
+        <EditText
+            android:id="@+id/editpasswd"
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:layout_weight="0.5"
+            android:autofillHints=""
+            android:hint="@string/pwd"
+            android:inputType="textPassword"
+            android:singleLine="true"
+            app:layout_constraintBottom_toTopOf="@+id/btnlogin"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/editname"
+            app:layout_constraintTop_toBottomOf="@+id/textView"
+            tools:ignore="MissingConstraints"
+            tools:targetApi="o" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnlogin"
+        android:layout_width="match_parent"
+        android:layout_height="47dp"
+        android:layout_marginBottom="8dp"
+        android:text="@string/date"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/btnlogin"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout"
+        app:layout_constraintVertical_bias="0.0"
+        tools:ignore="MissingConstraints,NotSibling" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="33dp"
+        android:text="@string/res"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="0dp" />
+
+    <Button
+        android:id="@+id/btnshow"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:text="@string/getDate"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnlogin" />
+
+
+    <Button
+        android:id="@+id/btn_calljs"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/calljs"
+        android:textAllCaps="false"
+        app:layout_constraintTop_toBottomOf="@+id/btnshow"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="-16dp" />
+
+    <Button
+        android:id="@+id/btn_printlog"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/printlog"
+        android:textAllCaps="false"
+        app:layout_constraintTop_toBottomOf="@+id/btn_calljs"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="0dp" />
+
+    <!--<Button-->
+        <!--android:id="@+id/create_SDcard"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:text="@string/btn_create_SDcard"-->
+        <!--android:textAllCaps="false"-->
+        <!--app:layout_constraintTop_toBottomOf="@+id/btn_calljs" />-->
+
+    <!--<Button-->
+        <!--android:id="@+id/btn_back"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:text="@string/btn_back"-->
+        <!--android:textAllCaps="false"-->
+        <!--app:layout_constraintTop_toBottomOf="@+id/btn_calljs"-->
+        <!--tools:ignore="MissingConstraints" />-->
+
+</android.support.constraint.ConstraintLayout>

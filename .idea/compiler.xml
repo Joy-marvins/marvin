@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <bytecodeTargetLevel>
+      <module name="marvin.app" target="11" />
+      <module name="marvin.mylibrary" target="11" />
+      <module name="marvin.myso" target="11" />
+      <module name="mysdk-20201206.app" target="11" />
+      <module name="mysdk-20201206.mylibrary" target="11" />
+      <module name="mysdk-20201206.myso" target="11" />
+      <module name="mysdk.app" target="1.8" />
+      <module name="mysdk.mylibrary" target="1.8" />
+      <module name="mysdk.myso" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+</project>

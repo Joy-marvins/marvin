@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SaveToSdCardActivity">
+
+    <EditText
+        android:id="@+id/content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="8dp"
+        android:hint="请输入内容"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="-16dp" />
+
+    <Button
+        android:id="@+id/save"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="8dp"
+        android:text="保存"
+        app:layout_constraintTop_toBottomOf="@+id/content"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="0dp"
+        android:layout_alignParentLeft="true" />
+
+    <Button
+        android:id="@+id/read"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/show"
+        android:layout_centerHorizontal="true"
+        android:text="读取"
+        app:layout_constraintTop_toBottomOf="@+id/save"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="16dp" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/show"
+        android:layout_below="@id/save"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/delete"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/show"
+        android:layout_alignParentEnd="true"
+        android:text="删除"
+        app:layout_constraintTop_toBottomOf="@+id/read"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="38dp" />
+
+</android.support.constraint.ConstraintLayout>

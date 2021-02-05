@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head> 
+<!--<meta charset="utf-8"> -->
+    <meta  charset="utf-8" name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+    <title>梆梆测试</title>
+	
+	<script>
+	function displayDate(){
+	document.getElementById("demo").innerHTML=Date();
+	}
+	</script>
+	<script>
+	function callJS(){
+	alert("Android调用了JS的callJS方法");
+	}
+	</script>
+</head>
+<body>
+<script src="myScript.js"></script>
+<div id="container" style="width:500px">
+ 
+<div id="header" style="background-color:#FFA500;">
+<h1 style="margin-bottom:0;">测试HTML&JS</h1></div>
+ 
+<div id="menu" style="background-color:#FFD700;width:100px;float:left;">
+    <b>测试</b><br>
+    HTML<br>
+	JS<br><br><br><br><br>
+</div>
+    <div id="content" style="background-color:#EEEEEE;width:400px;float:left;">
+	<p id="demo" style="word-break:break-all">这是一个段落</p>
+	<button type="button" onclick="displayDate()">使用HTML内的JS显示日期</button><br>
+		<button type="button" onclick="callJS()">使用HTML内的JS方法</button><br>
+    </div>
+
+</div>
+ 
+</body>
+</html>

@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">TestDemo</string>
+    <string name="creatDB">creat DB</string>
+    <string name="update">Update</string>
+    <string name="title_activity_main">activity_main</string>
+    <string name="btn_callSDK">Call SDK</string>
+    <string name="btn_callSO">Call SO</string>
+    <string name="btn_back">返回</string>
+    <string name="btn_create_database">创建数据库</string>
+    <string name="btn_create_SDcard">写入SDcard</string>
+    <string name="text_subject">This is a SDK</string>
+    <string name="bd_so">This is SO</string>
+    <string name="btn_callJS">调用单独的JS文件</string>
+    <string name="user">用户名</string>
+    <string name="pwd">密码</string>
+    <string name="date">输入用户名密码生成数据文件</string>
+    <string name="getDate">获取用户名和密码</string>
+    <string name="res">资源文件</string>
+    <string name="calljs">调用单独的JS文件</string>
+    <string name="printlog">打印日志</string>
+    <string name="text">测试Demo</string>
+</resources>
